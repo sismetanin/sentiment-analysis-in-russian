@@ -3,7 +3,7 @@
 This repository contains the fine-tuned Multilingual Bidirectional Encoder Representations from Transformers (M-BERT) (Devlin et al., 2019) and two versions of Multilingual Universal Sentence Encoder (M-USE) (Yang et al., 2019) for sentiment classification in Russian. Initially we were supposed to outline transfer learning baselines, but eventually, we achieved state-of-the-art results on the majority of datasets.
 
 | System  | RuReviews | RuReviews | Kaggle Russian News Dataset | LINIS Crowd | RuTweetCorp | 
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Previous SOTA | 75.45% | **78.50%** | 70.00% | 37.29% | 75.95% | 
 | M-BERT-Base-FiT | **77.31%** | 72.44% | 71.36% | 42.73% | **87.38%** |
 | M-BERT-Base-SNPT-FiT | – | 75.13% | – | – | – |
@@ -65,4 +65,4 @@ To download fine-tuned models for Russian, please follow the link [https://yadi.
 * If you find any issues, please open a bug here on GitHub.
 
 ## License
-See [LICENSE](LICENSE).
+See [LICENSE](LICENSE.txt).
