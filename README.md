@@ -2,7 +2,7 @@
 
 This is a release of 24 smaller BERT models referenced in Well-Read Students Learn Better: On the Importance of Pre-training Compact Models.
 
-This repository contains the fine-tuned Multilingual Bidirectional Encoder Representations from Transformers (M-BERT), RuBERT, and two versions of Multilingual Universal Sentence Encoder (M-USE) for sentiment classification in [Russian referenced in Deep Transfer Learning Baselines for Sentiment Analysis in Russian](https://www.sciencedirect.com/science/article/abs/pii/S0306457320309730).
+This repository contains the fine-tuned Multilingual Bidirectional Encoder Representations from Transformers (M-BERT), RuBERT, and two versions of Multilingual Universal Sentence Encoder (M-USE) for sentiment classification in Russian referenced in [Deep Transfer Learning Baselines for Sentiment Analysis in Russian](https://www.sciencedirect.com/science/article/abs/pii/S0306457320309730).
 
 <div class="tg-wrap"><table>
 <thead>
@@ -191,11 +191,13 @@ Despite the fact that Russian is one of the most common languages in the World W
 
 | Dataset  | Classes | Average lengths | Max lengths | Train Samples | Test Samples | Overall Samples | Download Link |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| RuReviews (Smetanin and Komarov, 2019)| 3 | 130.0693 | 1007 | n/a | n/a | 90000 | [Github page](https://github.com/sismetanin/rureviews) |
+| SentiRuEval-2016 | 3 | 87.0928 | 172 | 18,035 | 5,560 | 23,595 | [Project page](http://www.dialog-21.ru/evaluation/2016/sentiment/) |
+| SentiRuEval-2015 Subtask 2 | 3 | 81.4986 | 172 | 8,580  | 7,738 | 16,318 | [Project page](http://www.dialog-21.ru/evaluation/2015/sentiment/) |
+| RuTweetCorp (Rubtsova, 2013)| 3 | 89.1725 | 189 | n/a | n/a | 334836 | [Project page](http://study.mokoron.com) |
+| RuSentiment (Rogers et al., 2018)| 5 | 82.0279 | 800 | 28218 | 2967 | 31185 | [Project page](http://text-machine.cs.uml.edu/projects/rusentiment) |
+| LINIS Crowd (Koltsova et al., 2016)| 5  |  n/a  |  n/a  |  n/a  |  n/a  |  n/a  | [Project page](http://linis-crowd.org) |
 | RuSentiment (Rogers et al., 2018)| 5 | 82.0279 | 800 | 28218 | 2967 | 31185 | [Project page](http://text-machine.cs.uml.edu/projects/rusentiment) |
 | Kaggle Russian News Dataset (Kaggle, 2017)| 3 | 3911.8501 | 381498 | n/a | n/a | 8263 | [Kaggle page](https://www.kaggle.com/c/sentiment-analysis-in-russian) |
-| LINIS Crowd (Koltsova et al., 2016)| 5  |  n/a  |  n/a  |  n/a  |  n/a  |  n/a  | [Project page](http://linis-crowd.org) |
-| RuTweetCorp (Rubtsova, 2013)| 3 | 89.1725 | 189 | n/a | n/a | 334836 | [Project page](http://study.mokoron.com) |
 
 
 ## Fine-Tuned Models
@@ -206,7 +208,7 @@ To download fine-tuned models for Russian, please follow the link [https://yadi.
 @article{Smetanin2020Deep,
   title = {Deep transfer learning baselines for sentiment analysis in Russian},
   author = {Sergey Smetanin and Mikhail Komarov},
-  journal = {Information Processing \& Management},
+  journal = {Information Processing & Management},
   volume = {58},
   number = {3},
   pages = {102484},
