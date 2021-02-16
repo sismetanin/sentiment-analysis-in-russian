@@ -1,7 +1,5 @@
 # Deep Transfer Learning Baselines for Sentiment Analysis in Russian
 
-This is a release of 24 smaller BERT models referenced in Well-Read Students Learn Better: On the Importance of Pre-training Compact Models.
-
 This repository contains the fine-tuned Multilingual Bidirectional Encoder Representations from Transformers (M-BERT), RuBERT, and two versions of Multilingual Universal Sentence Encoder (M-USE) for sentiment classification in Russian referenced in [Deep Transfer Learning Baselines for Sentiment Analysis in Russian](https://www.sciencedirect.com/science/article/abs/pii/S0306457320309730).
 
 <div class="tg-wrap"><table>
@@ -183,7 +181,7 @@ This repository contains the fine-tuned Multilingual Bidirectional Encoder Repre
 </tbody>
 </table></div>
 
-SOTA approaches for RuReviews, RuSentiment, Kaggle Russian News Dataset, and RuTweetCorp were described in papers (Smetanin and Komarov, 2019), (Baymurzina et al., 2019), (Shalkarbayuli et al., 2018), 857 and (Rubtsova, 2018), consequently. The SOTA approach for LINIS Crowd was implemented based on the paper (Koltsova et al., 2016).
+SOTA approaches for RuReviews, RuSentiment, Kaggle Russian News Dataset, and RuTweetCorp were described in papers [(Smetanin and Komarov, 2019)](https://ieeexplore.ieee.org/document/8807792), [(Baymurzina et al., 2019)](http://www.dialog-21.ru/media/4586/baymurzinadrplusetal-015.pdf), [(Shalkarbayuli et al., 2018)](https://iopscience.iop.org/article/10.1088/1742-6596/1117/1/012002), and [(Rubtsova, 2018)](https://www.mdpi.com/2078-2489/9/8/184), consequently. The SOTA approach for LINIS Crowd was implemented based on the paper [(Koltsova et al., 2016)](https://publications.hse.ru/en/chapters/192815883).
 
 ## Sentiment Datasets in Russian
 Despite the fact that Russian is one of the most common languages in the World Wide Web, generally it is not as well-resourced as the English language, especially in the field of sentiment analysis. Even though many studies aim at sentiment classification, only few of them makes their datasets publicly available for the research community.
@@ -191,13 +189,13 @@ Despite the fact that Russian is one of the most common languages in the World W
 
 | Dataset  | Classes | Average lengths | Max lengths | Train Samples | Test Samples | Overall Samples | Download Link |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| SentiRuEval-2016 | 3 | 87.0928 | 172 | 18,035 | 5,560 | 23,595 | [Project page](http://www.dialog-21.ru/evaluation/2016/sentiment/) |
-| SentiRuEval-2015 Subtask 2 | 3 | 81.4986 | 172 | 8,580  | 7,738 | 16,318 | [Project page](http://www.dialog-21.ru/evaluation/2015/sentiment/) |
+| SentiRuEval-2016 [(Loukachevitch and Rubtsova, 2016)](http://www.dialog-21.ru/media/3410/loukachevitchnvrubtsovayv.pdf) | 3 | 87.0928 | 172 | 18,035 | 5,560 | 23,595 | [Project page](http://www.dialog-21.ru/evaluation/2016/sentiment/) |
+| SentiRuEval-2015 Subtask [(Loukachevitch et al., 2015)](http://www.dialog-21.ru/media/1024/loukachevitchnvetal.pdf) | 3 | 81.4986 | 172 | 8,580  | 7,738 | 16,318 | [Project page](http://www.dialog-21.ru/evaluation/2015/sentiment/) |
 | RuTweetCorp (Rubtsova, 2013)| 3 | 89.1725 | 189 | n/a | n/a | 334836 | [Project page](http://study.mokoron.com) |
-| RuSentiment (Rogers et al., 2018)| 5 | 82.0279 | 800 | 28218 | 2967 | 31185 | [Project page](http://text-machine.cs.uml.edu/projects/rusentiment) |
-| LINIS Crowd (Koltsova et al., 2016)| 5  |  n/a  |  n/a  |  n/a  |  n/a  |  n/a  | [Project page](http://linis-crowd.org) |
-| RuSentiment (Rogers et al., 2018)| 5 | 82.0279 | 800 | 28218 | 2967 | 31185 | [Project page](http://text-machine.cs.uml.edu/projects/rusentiment) |
-| Kaggle Russian News Dataset (Kaggle, 2017)| 3 | 3911.8501 | 381498 | n/a | n/a | 8263 | [Kaggle page](https://www.kaggle.com/c/sentiment-analysis-in-russian) |
+| LINIS Crowd [(Koltsova et al., 2016)](https://publications.hse.ru/en/chapters/192815883)| 5  |  n/a  |  n/a  |  n/a  |  n/a  |  n/a  | [Project page](http://linis-crowd.org) |
+| RuSentiment [(Rogers et al., 2018)](https://www.aclweb.org/anthology/C18-1064/)| 5 | 82.0279 | 800 | 28218 | 2967 | 31185 | [Project page](http://text-machine.cs.uml.edu/projects/rusentiment) |
+| Kaggle Russian News Dataset | 3 | 3911.8501 | 381498 | n/a | n/a | 8263 | [Kaggle page](https://www.kaggle.com/c/sentiment-analysis-in-russian) |
+| RuReviews [(Smetanin and Komarov, 2019)](https://ieeexplore.ieee.org/document/8807792) | 3 | 130.0693 | 1007 | n/a | n/a | 90,000 | [GitHub page](https://github.com/sismetanin/rureviews) |
 
 
 ## Fine-Tuned Models
@@ -218,16 +216,6 @@ To download fine-tuned models for Russian, please follow the link [https://yadi.
   url = {https://www.sciencedirect.com/science/article/pii/S0306457320309730}
 }
 ```
-
-## References
-1. Anna Rogers, Alexey Romanov, Anna Rumshisky, Svitlana Volkova, Mikhail Gronas, and Alex Gribov. 2018. RuSentiment: An enriched sentiment analysis dataset for social media in Russian. In Proceedings of the 27th International Conference on Computational Linguistics, pages 755–763, Santa Fe, New Mexico, USA. Association for Computational Linguistics.
-2. Kaggle. 2017. Sentiment analysis in Russian — Kaggle.
-3. Sergey Smetanin and Michail Komarov. 2019. Sentiment analysis of product reviews in Russian using convolutional neural networks. In 2019 IEEE 1174 21st Conference on Business Informatics (CBI), volume 01, pages 482–486.
-4. Jacob Devlin, Ming-Wei Chang, Kenton Lee, and 950 Kristina Toutanova. 2019. BERT: Pre-training of 951 deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association 953 for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages 4171–4186, Minneapolis, Minnesota. Association for Computational Linguistics.
-5. Olessia Koltsova, Svetlana Alexeeva, and Sergei Kolcov. 2016. An opinion word lexicon and a training dataset for Russian sentiment analysis of social media. Computational Linguistics and Intellectual Technologies. Papers from the Annual International Conference Dialogue 2016, pages 227–287.
-6. Yinfei Yang, Daniel Cer, Amin Ahmad, Mandy Guo, Jax Law, Noah Constant, Gustavo Herna ́ndez A ́brego,SteveYuan,ChrisTar,Yun-HsuanSung, Brian Strope, and Ray Kurzweil. 2019a. Multilingual universal sentence encoder for semantic retrieval. CoRR, abs/1907.04307.
-7. Yuliya Rubtsova. 2013. A method for development and analysis of short text corpus for the review classification task. Proceedings of conferences Digital Libraries: Advanced Methods and Technologies, Digital Collections (RCDL’2013), pages 269–275.
-
 
 ## Documentation and How to report bugs
 * TensorFlow documentation: [https://www.tensorflow.org/api_docs](https://www.tensorflow.org/api_docs).
